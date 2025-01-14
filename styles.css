@@ -1,0 +1,110 @@
+body{
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+main {
+    /* width: 500px; */
+    max-width: 750px;
+    margin: 75px auto;
+    padding: 0 25px;
+}
+
+h1{
+    color: darkblue;
+
+    background: url("../Images/Kanade.jpeg");
+    background-position: center;
+    background-size: 25%;
+    /* background-repeat: no-repeat; */
+
+    font-size: 3em;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: 300;
+    text-align: center;
+}
+
+/* Order of operations is important - more recent rules override older rules */
+
+p {
+    color: cornflowerblue;
+}
+
+p {
+    color: #0b3c5a;
+   
+    margin-bottom: 40px;
+}
+
+/* Targeting by class - more specific than tags */
+.highlighted {
+    background: greenyellow;
+
+    margin:40px;
+
+    /*padding-bottom: 50px;*/
+
+    /* We can specfic margin and padding for individual sides or as a whole */
+    
+    padding: 25px;
+    /* padding: 25px 50px;
+    padding: 25px 50px 75px;
+    padding: 25px 50px 75px 100px; */
+
+    margin-bottom: 40px;
+    padding: 25px;
+    border: 5px solid red;
+    border-bottom: 10px dashed teal;
+    border-radius: 40px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+/* Compount selector are more specfic */
+
+p.highlighted {
+    background-color: aqua;
+}
+
+/* Targetting by id - more specific than classes and tags */
+#important {
+    background-color: tomato;
+
+    width: 70%
+}
+
+.box {
+    padding: 50px;
+    background-color: grey;
+    
+}
+
+.bar1 {
+    height: 50px;
+    background-color: mediumturquoise;
+    width: 50%;
+}
+
+.bar2 {
+    height: 50px;
+    background-color: mediumslateblue;
+    width: 50vw;
+}
+
+.bar3 {
+    height: 50px;
+    background-color: mediumvioletred;
+    width: 50vh;
+}
+
+section {
+    background:skyblue;
+    min-height: 100vh;
+
+    padding: 25px;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 40%;
+}
